@@ -14,7 +14,7 @@ app.use(express.json());
 async function createConnection() {
     try {
         await client.connect();
-        
+        console.log("connection created");
     } catch(err) {
         throw err;
     }
